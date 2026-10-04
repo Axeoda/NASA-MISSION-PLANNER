@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Mission Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 NASA Mission Planner</h1>
+        <p>Organize and track space missions</p>
+    </header>
+
+    <main>
+
+        <section class="mission-form">
+            <h2>Add a Mission</h2>
+
+            <input type="text" id="missionName" placeholder="Mission Name">
+
+            <input type="text" id="destination" placeholder="Destination">
+
+            <input type="text" id="astronaut" placeholder="Astronaut Name">
+
+            <select id="status">
+                <option value="Planned">Planned</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <button onclick="addMission()">Add Mission</button>
+        </section>
+
+        <section class="mission-list">
+            <h2>Mission List</h2>
+
+            <div id="missions">
+                <p>No missions added yet.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>NASA Mission Planner Project </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
